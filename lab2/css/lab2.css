@@ -1,3 +1,13 @@
+div#body{
+    background-color: #cccccc;
+    width: 500px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px #444444; 
+    font-size: 20px;
+}
+
 h1 {
     color: orange;
     font-size: 200%;
@@ -9,12 +19,3 @@ p {
     margin-left: 10px;
 }
 
-#content {
-    background-color: #cccccc;
-    width: 500px;
-    min-height: 300px;
-    padding: 10px;
-    margin: 10px;
-    border: solid 1px #444444; 
-    font-size: 20px;
-}
