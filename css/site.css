@@ -23,7 +23,7 @@ h1 {
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px pink;
+  border: solid 8px pink;
   background-color: goldenrod);
 }
 
@@ -31,6 +31,6 @@ h1 {
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px maroon;
+  border: solid 4px maroon;
   background-color: #ebe8a5;
 }
