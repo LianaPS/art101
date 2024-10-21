@@ -13,6 +13,13 @@ year=2011
 //calculate
 age=2024-year; 
 
+// Output the results to the document
+document.writeln("Make: " + make + "<br>");
+document.writeln("Model: " + model + "<br>");
+document.writeln("Color: " + color + "<br>");
+document.writeln("Year: " + year + "<br>");
+document.writeln("Age: " + age + " years<br>");
+//credit to formatting help from ChatGBT
 console.log(age)
 
 
