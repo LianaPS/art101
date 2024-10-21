@@ -1,8 +1,20 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Lab 5 Data Types and Variables
+// Author: Liana Simonelli
+// Date: October 21st 2024
 
 // Constants
+
+// Define Variables
+make="subaru";
+model="outback";
+color="green"
+year=2011
+
+//calculate
+age=2024-year; 
+
+console.log(age)
+
 
 // Functions
 
