@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- This title is used for tabs and bookmarks -->
-		<title>Lab 5 -  Data Types and Variables</title>
-	
-		<!-- Use UTF character set, a good idea with any webpage -->
-		<meta charset="UTF-8" />
-		<!-- Set viewport so page remains consistently scaled w narrow devices -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<!-- Include a sitewide CSS file for consistent styling across the site -->
-		<link rel="stylesheet" type="text/css" href="../css/site.css">
-		<!-- Lab-specific CSS file for any special styling of this particular page -->
-		<link rel="stylesheet" type="text/css" href="css/lab.css">
-		
-		<!-- Load jQuery library to make JavaScript easier -->
-		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-		
-		<!-- Link to JavaScript file - DEFER waits until all elements are rendered -->
-		<script type="text/javascript" src="./js/lab.js" defer></script>
-		<!--code revised by ChatGBT to link JS to HTML -->
-	</head>
+<head>
+    <!-- This title is used for tabs and bookmarks -->
+    <title>Lab 5 - Data Types and Variables</title>
+
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled on narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Include a sitewide CSS file for consistent styling across the site -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <!-- Lab-specific CSS file for any special styling of this particular page -->
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
+
+    <!-- Load jQuery library to make JavaScript easier -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Link to JavaScript file - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="./js/lab.js" defer></script>
+    <!-- Code revised by ChatGPT to link JS to HTML -->
+</head>
 
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
-	<main id="content">
-		<section>
-			<h1>Lab 5 Data Types and Variables</h1>
-			<div class="minor-section">
-					<h2>Challenge</h2>
-					<p>The challenge of this lab has been linking my Javascript to my HTML so that it shows up in the console on my page.
-					I think overall it has been challenging going from html, css, and now JS so quickly. I do not really have a great grasp on any.
-					</p>
-			</div>
+    <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+    <main id="content">
+        <section>
+            <h1>Lab 5 Data Types and Variables</h1>
 
-			<div class="minor-section">
-					<h2>Problems</h2>
-					<p>I am coming across the issue of linking the code in my JS directory to my HTML to show up on my page. I have asked wesbot as well as chatgbt to see where I am going wrong but it appears that it should be working. I will continue testing. </p>
-			</div>
+            <div class="minor-section">
+                <h2>Challenge</h2>
+                <p>The challenge of this lab has been linking my JavaScript to my HTML so that it shows up in the console on my page.
+                I think overall it has been challenging going from HTML, CSS, and now JS so quickly. I do not really have a great grasp on any.
+                </p>
+            </div>
 
-			<div class="minor-section">
-					<h2>Reflection</h2>
-					<p>This assignment went farily smoothly. I feel like I am getting some grasp of these applications as well as some idea of how to ask questions in order to get better answers.</p>
-			</div>
+            <div class="minor-section">
+                <h2>Problems</h2>
+                <p>I am coming across the issue of linking the code in my JS directory to my HTML to show up on my page. I have asked Wesbot as well as ChatGPT to see where I am going wrong, but it appears that it should be working. I will continue testing.</p>
+            </div>
 
-			<div class="minor-section">
-					<h2>Results</h2>
-					<p>The results of this lab</p>
-					<div id="output"></div>
-			</div>
-			<h3>Script Output</h3>
-			<div class=output>
-				<script type="text/javascript" src="js/lab.js"></script>
-			</div>
-		</section>
-		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
-		</nav>
-	</main>
+            <div class="minor-section">
+                <h2>Reflection</h2>
+                <p>This assignment went fairly smoothly. I feel like I am getting some grasp of these applications as well as some idea of how to ask questions in order to get better answers.</p>
+            </div>
+
+            <div class="minor-section">
+                <h2>Results</h2>
+                <p>The results of this lab:</p>
+                <div id="output"></div>
+            </div>
+
+            <h3>Script Output</h3>
+            <div class="output">
+                <script type="text/javascript">
+                    // Define Variables
+                    var make = "subaru";
+                    var model = "outback";
+                    var color = "green";
+                    var year = 2011;
+
+                    // Calculate
+                    var age = 2024 - year;
+
+                    // Output the results to the document
+                    document.writeln("Make: " + make + "<br>");
+                    document.writeln("Model: " + model + "<br>");
+                    document.writeln("Color: " + color + "<br>");
+                    document.writeln("Year: " + year + "<br>");
+                    document.writeln("Age: " + age + " years<br>");
+                </script>
+            </div>
+        </section>
+
+        <nav id="links">
+            <!-- Put links to other pages (including the homepage) here. -->
+        </nav>
+    </main>
 </body>
 </html>
