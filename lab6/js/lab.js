@@ -1,6 +1,6 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Lag=b 6 Objects and Arrays
+// Author: Liana Simonelli
+// Date: October 26th 2024
 
 // Constants
 
@@ -19,3 +19,29 @@ function main() {
 
 // let's get this party started
 main();
+
+// Define Variables
+let myTransport = [
+  "Car",
+  "Walking",
+  "Bike",
+  "Train",
+  "Bus"
+];
+
+// Object for main ride
+let myMainRide = {
+  make: "Subaru",
+  model: "Outback",
+  year: 2011,
+  color: "Green"
+};
+
+// Output
+document.writeln("Getting around: " + myTransport + "<br>");
+
+// Output the main ride object 
+document.writeln("My Main Ride: <pre>",
+    JSON.stringify(myMainRide, null, '\t'), "</pre>");
+
+//sourced code formatting from Canvas & chat GBT to check 

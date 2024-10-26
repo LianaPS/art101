@@ -4,6 +4,30 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 7px maroon;
+    background-color: whitesmoke;
   }
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.9;
+    margin: 20px;
+}
+
+h1 {
+    color: chartreuse;
+}
+
+h2 {
+    color: forestgreen;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*formatting with help from ChatGBT
