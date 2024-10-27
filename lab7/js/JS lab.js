@@ -2,25 +2,34 @@
 // Author: Liana Simonelli
 // Date: 27 October 2024
 
-// Constants
+/**
+ * Prompts for name, sorts letters, then returns sorted name.
+ * @returns {string} sorted letters of name
+ */
+function sortUserName() {
+  // Prompt for name
+  var userName = window.prompt("Liana:");
 
-// Functions
+  // Convert the string into an array of characters
+  var nameArray = userName.split(""); // Split by empty string to get individual characters
 
+  // Sort the array of characters
+  nameArray.sort();
+
+  // Convert the array back into a string
+  var sortedName = nameArray.join("");
+
+  // Return the sorted name
+  return sortedName;
+}
+
+// Call the function and output the results
+var sortedUserName = sortUserName();
+document.writeln("Your sorted name is: " + sortedUserName);
+
+// jQuery document ready function
 $(document).ready(function() {
-    $('#script-output').text("This is the output from the JavaScript file!");
+  $('#script-output').text("This is the output from the JavaScript file!");
 });
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-    // some code here
-    // return results;
-  }
-  
-  function main() {
-    console.log("Main function started.");
-    // the code that makes everything happen
-  }
-  
-  // let's get this party started
-  main();
-  
+// chatGBT revised code strucutre and checked it to work 
