@@ -2,31 +2,29 @@
 // Author: Liana Simonelli
 // Date: 27 October 2024
 
-/**
- * Prompts for name, sorts letters, then returns sorted name.
- * @returns {string} sorted letters of name
- */
+// sortUserName - a function that takes user input and sorts the letters
+// of their name
 function sortUserName() {
-  // Prompt for name
-  var userName = window.prompt("Liana:");
-
-  // Convert the string into an array of characters
-  var nameArray = userName.split(""); // Split by empty string to get individual characters
-
-  // Sort the array of characters
-  nameArray.sort();
-
-  // Convert the array back into a string
-  var sortedName = nameArray.join("");
-
-  // Return the sorted name
-  return sortedName;
+  var userName = "Liana"; // Using your name directly instead of prompt
+  console.log("userName =", userName);
+  
+  // split string to array
+  var nameArray = userName.split('');
+  console.log("nameArray =", nameArray);
+  
+  // sort the array
+  var nameArraySort = nameArray.sort();
+  console.log("nameArraySort =", nameArraySort);
+  
+  // join array back to a string
+  var nameSorted = nameArraySort.join('');
+  console.log("nameSorted =", nameSorted);
+  
+  return nameSorted;
 }
 
-// Call the function and output the results
-var sortedUserName = sortUserName();
-document.writeln("Your sorted name is: " + sortedUserName);
-
+// output
+document.writeln("Oh hey, I've fixed your name: ", sortUserName(), "</br>");
 // jQuery document ready function
 $(document).ready(function() {
   $('#script-output').text("This is the output from the JavaScript file!");
