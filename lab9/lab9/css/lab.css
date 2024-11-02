@@ -30,10 +30,4 @@ img {
     max-width: 100%;
     height: auto;
 }
-.special {
-    background-color: maroon;
-    border: dotted 50px orange;
-    color: black;
-    font-weight: bold;
-}
 /*formatting with help from ChatGBT
