@@ -1,6 +1,6 @@
 // index.js - Lab 7 Functions
 // Author: Liana Simonelli
-// Date: 27 October 2024
+// Date: 4 Novemeber 2024
 
 // sortUserName - a function that takes user input and sorts the letters
 // of their name
@@ -30,4 +30,20 @@ $(document).ready(function() {
   $('#script-output').text("This is the output from the JavaScript file!");
 });
 
-// chatGBT revised code strucutre and checked it to work 
+
+/*
+   lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
+
+   Requirements: jQuery must be loaded for this script to work.
+*/
+
+$(document).ready(function() {
+  // Add button to challenge section
+  $("#challenge").append("<button id='button-challenge'>Make Special</button>");
+  
+  // challenge button edit
+  $("#button-challenge").click(function() {
+    // Toggle the "special" class in challenges
+    $("#challenge").toggleClass("special");
+  });
+});
