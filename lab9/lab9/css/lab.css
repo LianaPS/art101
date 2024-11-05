@@ -14,6 +14,13 @@
     margin: 30px;
 }
 
+.special {
+    background-color: pink;
+    border: dotted 50px pink;
+    color: pink;
+    font-weight: bold;
+}
+
 h1 {
     color: black;
 }
