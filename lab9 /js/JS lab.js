@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   // Add button to challenge section
-  $("#challenge").append("<button id='button-challenge'>Make Special</button>");
+  $("#challenge").append("<button id='#button-challenge'>Make Special</button>");
   
   // challenge button edit
   $("#button-challenge").click(function() {
