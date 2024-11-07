@@ -1,33 +1,28 @@
-// index.js - Lab 7 Functions
-// Author: Liana Simonelli
-// Date: 27 October 2024
+/*
+   lab.js - This simple JavaScript/jQuery script appends new elements to an output div
 
-// sortUserName - a function that takes user input and sorts the letters
-// of their name
-function sortUserName() {
-  var userName = "Liana"; // Using your name directly instead of prompt
-  console.log("userName =", userName);
-  
-  // split string to array
-  var nameArray = userName.split('');
-  console.log("nameArray =", nameArray);
-  
-  // sort the array
-  var nameArraySort = nameArray.sort();
-  console.log("nameArraySort =", nameArraySort);
-  
-  // join array back to a string
-  var nameSorted = nameArraySort.join('');
-  console.log("nameSorted =", nameSorted);
-  
-  return nameSorted;
+   Requirements: jQuery must be loaded for this script to work.
+
+   Author: Liana Simonelli
+   Date: 7 November 2024
+*/
+
+// Function to generate random environmental observation text
+function generateRandomText() {
+  const text = "The chair sits on the window and the winodw in front of the curtian you can see the chill on the glass and in my heart.";
+  const min = 3;
+  const max = 100;
+  const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
+  const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
+  return text.slice(randStart, randStart + randLen);
 }
 
-// output
-document.writeln("Oh hey, I've fixed your name: ", sortUserName(), "</br>");
-// jQuery document ready function
-$(document).ready(function() {
-  $('#script-output').text("This is the output from the JavaScript file!");
+// Event listener for button click
+$("#make-convo").click(function(){
+  // Generate new fake dialogue text
+  const newText = generateRandomText();
+  
+  // Append a new div with the generated text to the output div
+  $("#output").append('<div class="text"><p>' + newText + '</p></div>');
 });
 
-// chatGBT revised code strucutre and checked it to work 
