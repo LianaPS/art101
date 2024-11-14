@@ -1,28 +1,28 @@
 /*
-   lab.js - This simple JavaScript/jQuery script appends new elements to an output div
-
-   Requirements: jQuery must be loaded for this script to work.
-
-   Author: Liana Simonelli
-   Date: 7 November 2024
-*/
-
-// Function to generate random environmental observation text
-function generateRandomText() {
-  const text = "The chair sits on the window and the winodw in front of the curtian you can see the chill on the glass and in my heart.";
-  const min = 3;
-  const max = 100;
-  const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
-  const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
-  return text.slice(randStart, randStart + randLen);
+ * Author: Liana Simonelli
+ * Date: 14, November 2024
+ */
+//return Harry Potter Houses
+//depending on length of mod 4
+function sortingHat(str) {
+  let length = str.length;
+  let mod = length % 4;
+  if (mod === 0) {
+      return "Gryffindor";
+  } else if (mod === 1) {
+      return "Ravenclaw";
+  } else if (mod === 2) {
+      return "Slytherin";
+  } else {
+      return "Hufflepuff";
+  }
 }
 
-// Event listener for button click
-$("#make-convo").click(function(){
-  // Generate new fake dialogue text
-  const newText = generateRandomText();
-  
-  // Append a new div with the generated text to the output div
-  $("#output").append('<div class="text"><p>' + newText + '</p></div>');
-});
-
+var myButton= document.getElementById("button");
+myButton.addEventListener("click", function() {
+  var name=document.getElementById("input").value;
+  var house= sortingHat(name);
+  newText = "<p>The Sorting Hat has sorted you into " + house + "</p>";
+  document.getElementById("output").innerHTML = newText;
+})
+//formatting and code checking from chatGBT and wesbot
