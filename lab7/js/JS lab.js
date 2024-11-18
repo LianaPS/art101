@@ -30,4 +30,4 @@ $(document).ready(function() {
   $('#script-output').text("This is the output from the JavaScript file!");
 });
 
-// chatGBT revised code strucutre and checked it to work 
+// chatGBT revised code strucutre and checked it work

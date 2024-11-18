@@ -4,8 +4,8 @@
 .minor-section {
     padding: 15px;
     margin-bottom: 10px;
-    border: solid 10px maroon;
-    background-color: aliceblue;
+    border: solid 10px forestgreen;
+    background-color: chartreuse ;
   }
 
   body {
@@ -15,11 +15,11 @@
 }
 
 h1 {
-    color: pink;
+    color: orangered;
 }
 
 h2 {
-    color: maroon;
+    color: orangered;
 }
 
 div {
@@ -29,5 +29,11 @@ div {
 img {
     max-width: 100%;
     height: auto;
+}
+.special {
+    background-color: chartreuse;
+    border: dotted 50px forestgreen;
+    color: black;
+    font-weight: bold;
 }
 /*formatting with help from ChatGBT
